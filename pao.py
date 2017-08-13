@@ -9,7 +9,7 @@ import time
 
 r = praw.Reddit(user_agent = "test_version 1.0")
 
-f = file("information.txt", "r")
+f = file("credentials.txt", "r")
 fileName = f.readline()
 filePass = f.readline()
 r.login(fileName, filePass, disable_warning=True)
